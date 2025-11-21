@@ -39,7 +39,7 @@ For use with Tampermonkey, Greasemonkey, Violentmonkey, or other userscript mana
    - [Tampermonkey](https://www.tampermonkey.net/) (Chrome, Firefox, Edge, Safari, Opera)
    - [Greasemonkey](https://www.greasespot.net/) (Firefox)
    - [Violentmonkey](https://violentmonkey.github.io/) (Chrome, Firefox, Edge, Opera)
-2. Download the latest `house-of-web.user.js` file from the [Releases](https://github.com/agoramachina/House-of-Web/releases/latest) page, or create a new script and paste the [code](https://github.com/agoramachina/House-of-Web/blob/main/house-of-web.user.js) from this repository
+2. Download the latest `house-of-web.user.js` file from the [Releases](https://github.com/agoramachina/House-of-Web/releases/latest) page or [Greasyfork](https://greasyfork.org/en/scripts/556521-house-of-web), or create a new script and paste the [code](https://github.com/agoramachina/House-of-Web/blob/main/house-of-web.user.js) from this repository
 3. The userscript manager should prompt you to install it
 
 ## Configuration
