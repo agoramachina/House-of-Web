@@ -45,10 +45,7 @@ function highlightWordInTextNodes(rootNode, words, style, className) {
   walk(rootNode);
 }
 
-// House in: English, French, German, Spanish, Latin, Russian, Japanese, Greek
-const houseWords = ['house', 'maison', 'haus', 'casa', 'domus', 'Дом', '家', 'σπίτι'];
-// Minotaur in: English, French, Spanish/Italian, Greek, Latin, Russian, Japanese
-const minotaurWords = ['minotaur', 'minotaure', 'minotauro', 'minotauros', 'minotaurus', 'Минотавр', 'ミノタウロス', 'ミーノータウロス'];
+// houseWords and minotaurWords are defined in languages.js
 
 const houseStyle = 'color:#0047bb; font-family:Courier, monospace';
 const minotaurStyle = 'color:red; font-family:Courier, monospace; text-decoration: line-through;';

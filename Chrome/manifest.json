@@ -1,7 +1,7 @@
 {
    "author": "DetectiveR",
    "content_scripts": [ {
-      "js": [ "main.js" ],
+      "js": [ "languages.js", "main.js" ],
       "matches": [ "\u003Call_urls>" ],
       "run_at": "document_idle"
    } ],
