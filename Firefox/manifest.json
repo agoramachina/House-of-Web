@@ -2,7 +2,7 @@
    "author": "DetectiveR",
    "browser_specific_settings": {
       "gecko": {
-         "id": "house-of-firefox@detectiver",
+         "id": "house-of-web@detectiver",
          "strict_min_version": "109.0"
       }
    },
@@ -18,6 +18,6 @@
       "48": "Icons/48.png"
    },
    "manifest_version": 3,
-   "name": "House Of Firefox",
+   "name": "House of Web",
    "version": "1.0.0"
 }

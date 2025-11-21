@@ -3,7 +3,7 @@
 A browser extension that transforms your web browsing experience to reflect the style of Mark Z. Danielewski's novel "House of Leaves".
 
 The extension highlights specific words across any webpage:
-- **"house"** (in 18 languages) appears in blue monospace text
+- **"house"** (in 19 languages) appears in blue monospace text
 - **"minotaur"** (in 19 languages) appears in red strikethrough monospace text
 
 ## Installation
