@@ -10,15 +10,15 @@ The extension highlights specific words across any webpage:
 
 ### Chrome
 
-#### From Chrome Web Store (Recommended)
+#### Simple Installation
 
-Install directly from the Chrome Web Store:
+For the easiest installation on Chrome, it is recommended to install DetectiveR's original [House of Chrome](https://chromewebstore.google.com/detail/house-of-chrome/mnbekndlgloliogbadocmlgefdacgoch) extension directly from the Chrome Web Store.
 
-https://chromewebstore.google.com/detail/house-of-chrome/mnbekndlgloliogbadocmlgefdacgoch
+For the latest features, you will need to install manually from this repository using the instructions below.
 
 #### Manual Installation
 
-1. Download or clone this repository
+1. Clone this repository, or download the latest [Release](https://github.com/agoramachina/House-of-Web/releases/latest) and unzip it. This is where Chrome will look for the extension, so make sure it's in a location where it won't be moved or deleted.
 2. Open Chrome and navigate to `chrome://extensions/`
 3. Enable "Developer mode" in the top right corner
 4. Click "Load unpacked"
@@ -26,16 +26,12 @@ https://chromewebstore.google.com/detail/house-of-chrome/mnbekndlgloliogbadocmlg
 
 ### Firefox
 
-#### Manual Installation
+1. Download the `.xpi` file from the latest [Release](https://github.com/agoramachina/House-of-Web/releases/latest)
+2. Open Firefox and navigate to `about:addons`
+3. Click the gear icon and select "Install Add-on From File..."
+4. Select the downloaded `.xpi` file
 
-1. Download or clone this repository
-2. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`
-3. Click "Load Temporary Add-on..."
-4. Select the `manifest.json` file inside the `Firefox` folder
-
-Note: Temporary add-ons are removed when Firefox is closed. For permanent installation, the extension needs to be signed by Mozilla or installed in Firefox Developer Edition/Nightly with signature checking disabled.
-
-### Tampermonkey / Userscript
+### Userscript
 
 For use with Tampermonkey, Greasemonkey, Violentmonkey, or other userscript managers:
 
@@ -43,12 +39,27 @@ For use with Tampermonkey, Greasemonkey, Violentmonkey, or other userscript mana
    - [Tampermonkey](https://www.tampermonkey.net/) (Chrome, Firefox, Edge, Safari, Opera)
    - [Greasemonkey](https://www.greasespot.net/) (Firefox)
    - [Violentmonkey](https://violentmonkey.github.io/) (Chrome, Firefox, Edge, Opera)
-2. Click on the raw `house-of-web.user.js` file in the `Tampermonkey` folder, or create a new script and paste the contents
+2. Download the latest `house-of-web.user.js` file from the [Releases](https://github.com/agoramachina/House-of-Web/releases/latest) page, or create a new script and paste the [code](https://github.com/agoramachina/House-of-Web/blob/main/house-of-web.user.js) from this repository
 3. The userscript manager should prompt you to install it
 
-**Configuration:** Edit the `includeSubstrings` variable at the top of the script:
-- `true` (default): Matches words inside other words (e.g., "house" in "household")
-- `false`: Only matches whole words
+## Configuration
+
+The extension includes an option to toggle substring matching:
+- **Enabled** (default): "house" matches inside "household", "warehouse", etc.
+- **Disabled**: Only standalone words are highlighted
+
+### Chrome / Firefox
+
+1. Right-click the extension icon in your browser toolbar
+2. Select "Options" (Chrome) or "Manage Extension" → "Preferences" (Firefox)
+3. Toggle the "Match substrings" checkbox
+
+### Userscript
+
+Edit the `includeSubstrings` variable at the top of the script:
+```javascript
+const includeSubstrings = true;  // Set to false for whole-word matching only
+```
 
 ## Supported Languages
 
@@ -73,4 +84,5 @@ For use with Tampermonkey, Greasemonkey, Violentmonkey, or other userscript mana
 | Constructed | Klingon (veqlargh), Vulcan (stislak), Lojban (cizda'u) |
 
 ## Acknowledgements
-House of Web is based on code from DetectiveR's [House of Chrome](https://chromewebstore.google.com/detail/house-of-chrome/mnbekndlgloliogbadocmlgefdacgoch) extension.  
+
+House of Web is based on code from DetectiveR's [House of Chrome](https://chromewebstore.google.com/detail/house-of-chrome/mnbekndlgloliogbadocmlgefdacgoch) extension.

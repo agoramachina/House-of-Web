@@ -79,7 +79,7 @@ const observer = new MutationObserver((mutations) => {
         pendingNodes.add(node);
       } else if (node.nodeType === Node.TEXT_NODE) {
         // For text nodes, we'll process the parent
-        if (node.parentNode && !node.parentNode.getAttribute?.('data-highlighted')) {
+        if (node.parentNode && !(node.parentNode.getAttribute && node.parentNode.getAttribute('data-highlighted'))) {
           pendingNodes.add(node.parentNode);
         }
       }
