@@ -3,7 +3,7 @@
 A browser extension that transforms your web browsing experience to reflect the style of Mark Z. Danielewski's novel "House of Leaves".
 
 The extension highlights specific words across any webpage:
-- **"house"** (in 7 languages) appears in blue monospace text
+- **"house"** (in 8 languages) appears in blue monospace text
 - **"minotaur"** (in 8 languages) appears in red strikethrough monospace text
 
 ## Installation
@@ -38,7 +38,7 @@ Note: Temporary add-ons are removed when Firefox is closed. For permanent instal
 ## Supported Languages
 
 ### "House" variations
-English, French (maison), German (haus), Spanish (casa), Latin (domus), Russian (Дом), Japanese (家)
+English, French (maison), German (haus), Spanish (casa), Latin (domus), Russian (Дом), Japanese (家), Greek (σπίτι)
 
 ### "Minotaur" variations
 English, French (minotaure), Spanish/Italian (minotauro), Greek (minotauros), Latin (minotaurus), Russian (Минотавр), Japanese (ミノタウロス, ミーノータウロス)
