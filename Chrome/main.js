@@ -1,6 +1,14 @@
-function highlightWordInTextNodes(rootNode, words, style, className) {
+// Use browser API for Firefox compatibility, fall back to chrome for Chrome
+const storageApi = (typeof browser !== 'undefined' ? browser : chrome).storage.sync;
+
+// Global setting - default to true (substrings enabled)
+let includeSubstrings = true;
+
+function highlightWordInTextNodes(rootNode, words, style, className, useSubstrings) {
   const pattern = words.join('|');
-  const regex = new RegExp(pattern, 'gi');
+  // Use word boundaries when substrings are disabled
+  const regexPattern = useSubstrings ? pattern : `\\b(${pattern})\\b`;
+  const regex = new RegExp(regexPattern, 'gi');
   const skipTags = ['SCRIPT', 'STYLE', 'NOSCRIPT', 'TEXTAREA'];
 
   function isInsideHighlight(node) {
@@ -51,12 +59,9 @@ const houseStyle = 'color:#0047bb; font-family:Courier, monospace';
 const minotaurStyle = 'color:red; font-family:Courier, monospace; text-decoration: line-through;';
 
 function applyHighlighting(rootNode) {
-  highlightWordInTextNodes(rootNode, houseWords, houseStyle, 'highlighted-house');
-  highlightWordInTextNodes(rootNode, minotaurWords, minotaurStyle, 'highlighted-minotaur');
+  highlightWordInTextNodes(rootNode, houseWords, houseStyle, 'highlighted-house', includeSubstrings);
+  highlightWordInTextNodes(rootNode, minotaurWords, minotaurStyle, 'highlighted-minotaur', includeSubstrings);
 }
-
-// Initial highlighting
-applyHighlighting(document.body);
 
 // Set up observer for dynamic content
 let scheduled = false;
@@ -106,7 +111,17 @@ const observer = new MutationObserver((mutations) => {
   }, 250);
 });
 
-observer.observe(document.body, {
-  childList: true,
-  subtree: true,
+// Load settings and then apply initial highlighting
+storageApi.get(['includeSubstrings'], (result) => {
+  // Default to true if not set
+  includeSubstrings = result.includeSubstrings !== undefined ? result.includeSubstrings : true;
+
+  // Apply initial highlighting
+  applyHighlighting(document.body);
+
+  // Start observing for dynamic content
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+  });
 });
