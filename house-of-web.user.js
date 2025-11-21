@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         House of Web
 // @namespace    https://github.com/agoramachina/House-of-Web
-// @version      1.0.0
+// @version      2.0.1
 // @description  Change text to reflect the style of 'House of Leaves'
-// @author       agoramachina (forked from DetectiveR)
+// @author       agoramachina (forked from DetectiveR's House of Chrome extension)
 // @match        *://*/*
 // @grant        none
 // @run-at       document-idle
@@ -48,7 +48,7 @@
     // Other scripts
     'בית',          // Hebrew
     'بيت',          // Arabic
-    'വീട്',          // Malayalam
+    'വീട്',         // Malayalam
 
     // Constructed languages
     'juH qach',     // Klingon (tlhIngan Hol) - "home building"
@@ -76,15 +76,15 @@
     'Μινώταυρος',   // Greek (native)
 
     // CJK (Chinese, Japanese, Korean)
-    'ミノタウロス',      // Japanese (Minotaurosu)
+    'ミノタウロス',       // Japanese (Minotaurosu)
     'ミーノータウロス',   // Japanese (alternate: Mīnōtaurosu)
-    '미노타우로스',     // Korean
-    '弥诺陶洛斯',      // Chinese (Simplified)
+    '미노타우로스',      // Korean
+    '弥诺陶洛斯',       // Chinese (Simplified)
 
     // Other scripts
     'מינוטאור',     // Hebrew
     'مينوتور',      // Arabic
-    'മിനോട്ടോർ',     // Malayalam
+    'മിനോട്ടോർ',  // Malayalam
 
     // Constructed languages
     'veqlargh',     // Klingon - Fek'lhr (mythological demon/beast)

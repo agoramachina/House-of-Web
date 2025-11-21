@@ -1,5 +1,5 @@
 {
-   "author": "agoramachina (forked from DetectiveR)",
+   "author": "agoramachina (forked from DetectiveR's House of Chrome extension)",
    "content_scripts": [ {
       "js": [ "languages.js", "main.js" ],
       "matches": [ "<all_urls>" ],
@@ -15,5 +15,5 @@
    "name": "House of Web",
    "options_page": "options.html",
    "permissions": [ "storage" ],
-   "version": "1.0.0"
+   "version": "2.0.1"
 }

@@ -1,5 +1,5 @@
 {
-   "author": "agoramachina (forked from DetectiveR)",
+   "author": "agoramachina (forked from DetectiveR's House of Chrome extension)",
    "browser_specific_settings": {
       "gecko": {
          "id": "house-of-web@agoramachina",
@@ -23,5 +23,5 @@
       "page": "options.html"
    },
    "permissions": [ "storage" ],
-   "version": "1.0.0"
+   "version": "2.0.1"
 }
