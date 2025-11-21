@@ -1,0 +1,19 @@
+{
+   "author": "DetectiveR",
+   "content_scripts": [ {
+      "js": [ "main.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_idle"
+   } ],
+   "description": "Change text to reflect the style of 'House of Leaves'",
+   "icons": {
+      "128": "Icons/128.png",
+      "32": "Icons/32.png",
+      "48": "Icons/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsU+pCsTuEOVPngGmp0m8nMy7KOXejReC2g5Z/2olsPbnwGxaXTxeyT/s/G8I2+e7O3DpAwgLneIo3KO8FkRTl3O+tl/JoZB7ZRY90+KfpIjTemJ9wdZN0fJ+ljdpse3gkXtD4B0Ss52JvpfMbtlvvJyKSaO657vigityWQXp3A91LDGsB7c7KmyxwzYvbO3lUay/SJiIN0n8aBRnbEOaI4Y4Tg9VNN73n7ADSR+S0uT0Ag8E+6obfDOLqFvoPP2fI2EvW5cnnMD86Gnh1UcS+oIjPLHj+nrLQLq9nbF0VJWK/7fO29AM+DYLK/poz3VbiZrnnGaDbWoUtSixmbjORwIDAQAB",
+   "manifest_version": 3,
+   "name": "House Of Chrome",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.0"
+}
