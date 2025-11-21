@@ -1,0 +1,23 @@
+{
+   "author": "DetectiveR",
+   "browser_specific_settings": {
+      "gecko": {
+         "id": "house-of-firefox@detectiver",
+         "strict_min_version": "109.0"
+      }
+   },
+   "content_scripts": [ {
+      "js": [ "main.js" ],
+      "matches": [ "<all_urls>" ],
+      "run_at": "document_idle"
+   } ],
+   "description": "Change text to reflect the style of 'House of Leaves'",
+   "icons": {
+      "128": "Icons/128.png",
+      "32": "Icons/32.png",
+      "48": "Icons/48.png"
+   },
+   "manifest_version": 3,
+   "name": "House Of Firefox",
+   "version": "1.0.0"
+}
