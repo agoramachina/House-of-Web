@@ -35,6 +35,21 @@ https://chromewebstore.google.com/detail/house-of-chrome/mnbekndlgloliogbadocmlg
 
 Note: Temporary add-ons are removed when Firefox is closed. For permanent installation, the extension needs to be signed by Mozilla or installed in Firefox Developer Edition/Nightly with signature checking disabled.
 
+### Tampermonkey / Userscript
+
+For use with Tampermonkey, Greasemonkey, Violentmonkey, or other userscript managers:
+
+1. Install a userscript manager for your browser:
+   - [Tampermonkey](https://www.tampermonkey.net/) (Chrome, Firefox, Edge, Safari, Opera)
+   - [Greasemonkey](https://www.greasespot.net/) (Firefox)
+   - [Violentmonkey](https://violentmonkey.github.io/) (Chrome, Firefox, Edge, Opera)
+2. Click on the raw `house-of-web.user.js` file in the `Tampermonkey` folder, or create a new script and paste the contents
+3. The userscript manager should prompt you to install it
+
+**Configuration:** Edit the `includeSubstrings` variable at the top of the script:
+- `true` (default): Matches words inside other words (e.g., "house" in "household")
+- `false`: Only matches whole words
+
 ## Supported Languages
 
 ### "House" variations
