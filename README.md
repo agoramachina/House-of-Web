@@ -1,7 +1,7 @@
 Change website text to reflect the style of Mark Z. Danielewski's 'House of Leaves'.
 
 All instances of the word 'house' change to Courier font and are coloured blue.
-All instances of the word 'minotaur' also change their font, are coloured red and are striked through.
+All instances of the word ~$${\color{red}minotaur}$$~ also change their font, are coloured red and are striked through.
 
 Also works for both words in some other languages.
 
