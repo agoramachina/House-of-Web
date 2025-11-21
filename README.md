@@ -73,6 +73,4 @@ For use with Tampermonkey, Greasemonkey, Violentmonkey, or other userscript mana
 | Constructed | Klingon (veqlargh), Vulcan (stislak), Lojban (cizda'u) |
 
 ## Acknowledgements
-House of Web is based on code from DetectiveR's [House of Chrome](https://chromewebstore.google.com/detail/house-of-chrome/mnbekndlgloliogbadocmlgefdacgoch?hl) Chrome extension.  
-For easy installation on Chrome browser, it's recommended to get the extension directly from the CWS.  
-For new features, you will need to install manually from this repo.
+House of Web is based on code from DetectiveR's [House of Chrome](https://chromewebstore.google.com/detail/house-of-chrome/mnbekndlgloliogbadocmlgefdacgoch?hl) extension.  
