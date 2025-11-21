@@ -1,8 +1,8 @@
 {
-   "author": "DetectiveR",
+   "author": "agoramachina (forked from DetectiveR)",
    "browser_specific_settings": {
       "gecko": {
-         "id": "house-of-web@detectiver",
+         "id": "house-of-web@agoramachina",
          "strict_min_version": "109.0"
       }
    },

@@ -3,7 +3,7 @@
 // @namespace    https://github.com/agoramachina/House-of-Web
 // @version      1.0.0
 // @description  Change text to reflect the style of 'House of Leaves'
-// @author       DetectiveR
+// @author       agoramachina (forked from DetectiveR)
 // @match        *://*/*
 // @grant        none
 // @run-at       document-idle
