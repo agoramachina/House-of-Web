@@ -56,3 +56,8 @@ Note: Temporary add-ons are removed when Firefox is closed. For permanent instal
 | CJK | Japanese (ミノタウロス, ミーノータウロス), Korean (미노타우로스), Chinese (弥诺陶洛斯) |
 | Other | Hebrew (מינוטאור), Arabic (مينوتور), Malayalam (മിനോട്ടോർ) |
 | Constructed | Klingon (veqlargh), Vulcan (stislak), Lojban (cizda'u) |
+
+## Acknowledgements
+House of Web is based on code from DetectiveR's [House of Chrome](https://chromewebstore.google.com/detail/house-of-chrome/mnbekndlgloliogbadocmlgefdacgoch?hl) Chrome extension.  
+For easy installation on Chrome browser, it's recommended to get the extension directly from the CWS.  
+For new features, you will need to install manually from this repo.
