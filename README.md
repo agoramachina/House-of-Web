@@ -71,3 +71,6 @@ For use with Tampermonkey, Greasemonkey, Violentmonkey, or other userscript mana
 | CJK | Japanese (ミノタウロス, ミーノータウロス), Korean (미노타우로스), Chinese (弥诺陶洛斯) |
 | Other | Hebrew (מינוטאור), Arabic (مينوتور), Malayalam (മിനോട്ടോർ) |
 | Constructed | Klingon (veqlargh), Vulcan (stislak), Lojban (cizda'u) |
+
+## Acknowledgements
+House of Web is based on code from DetectiveR's [House of Chrome](https://chromewebstore.google.com/detail/house-of-chrome/mnbekndlgloliogbadocmlgefdacgoch) extension.  
