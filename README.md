@@ -3,8 +3,8 @@
 A browser extension that transforms your web browsing experience to reflect the style of Mark Z. Danielewski's novel "House of Leaves".
 
 The extension highlights specific words across any webpage:
-- **"house"** (in 7 languages) appears in blue monospace text
-- **"minotaur"** (in 8 languages) appears in red strikethrough monospace text
+- **"house"** (in 18 languages) appears in blue monospace text
+- **"minotaur"** (in 19 languages) appears in red strikethrough monospace text
 
 ## Installation
 
@@ -38,7 +38,21 @@ Note: Temporary add-ons are removed when Firefox is closed. For permanent instal
 ## Supported Languages
 
 ### "House" variations
-English, French (maison), German (haus), Spanish (casa), Latin (domus), Russian (Дом), Japanese (家)
+| Script | Languages |
+|--------|-----------|
+| Latin | English, French (maison), German (haus), Spanish/Italian/Portuguese (casa), Latin (domus), Dutch (huis), Swedish/Norwegian/Danish (hus) |
+| Cyrillic | Russian (Дом), Ukrainian (будинок), Bulgarian (къща) |
+| Greek | Greek (σπίτι) |
+| CJK | Japanese/Chinese (家), Korean (집) |
+| Other | Hebrew (בית), Arabic (بيت), Malayalam (വീട്) |
+| Constructed | Klingon (juH qach), Vulcan (-kelek), Lojban (zdani) |
 
 ### "Minotaur" variations
-English, French (minotaure), Spanish/Italian (minotauro), Greek (minotauros), Latin (minotaurus), Russian (Минотавр), Japanese (ミノタウロス, ミーノータウロス)
+| Script | Languages |
+|--------|-----------|
+| Latin | English, French (minotaure), Spanish/Italian/Portuguese (minotauro), Greek romanized (minotauros), Latin/German/Dutch (minotaurus) |
+| Cyrillic | Russian (Минотавр), Ukrainian (Мінотавр), Bulgarian (Минотавър) |
+| Greek | Greek (Μινώταυρος) |
+| CJK | Japanese (ミノタウロス, ミーノータウロス), Korean (미노타우로스), Chinese (弥诺陶洛斯) |
+| Other | Hebrew (מינוטאור), Arabic (مينوتور), Malayalam (മിനോട്ടോർ) |
+| Constructed | Klingon (veqlargh), Vulcan (stislak), Lojban (cizda'u) |
