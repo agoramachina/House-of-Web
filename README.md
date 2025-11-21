@@ -22,7 +22,7 @@ For the latest features, you will need to install manually from this repository 
 2. Open Chrome and navigate to `chrome://extensions/`
 3. Enable "Developer mode" in the top right corner
 4. Click "Load unpacked"
-5. Select the `Chrome` folder from this repository
+5. Select the `chrome` folder from this repository
 
 ### Firefox
 
@@ -39,7 +39,7 @@ For use with Tampermonkey, Greasemonkey, Violentmonkey, or other userscript mana
    - [Tampermonkey](https://www.tampermonkey.net/) (Chrome, Firefox, Edge, Safari, Opera)
    - [Greasemonkey](https://www.greasespot.net/) (Firefox)
    - [Violentmonkey](https://violentmonkey.github.io/) (Chrome, Firefox, Edge, Opera)
-2. Download the latest `house-of-web.user.js` file from the [Releases](https://github.com/agoramachina/House-of-Web/releases/latest) page, or create a new script and paste the [code](https://github.com/agoramachina/House-of-Web/blob/main/Userscript/house-of-web.user.js) from this repository
+2. Download the latest `house-of-web.user.js` file from the [Releases](https://github.com/agoramachina/House-of-Web/releases/latest) page, or create a new script and paste the [code](https://github.com/agoramachina/House-of-Web/blob/main/userscript/house-of-web.user.js) from this repository
 3. The userscript manager should prompt you to install it
 
 ## Configuration
