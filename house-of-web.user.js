@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         House of Web
 // @namespace    https://github.com/agoramachina/House-of-Web
-// @version      2.0.3
+// @version      2.0.4
 // @description  Change text to reflect the style of 'House of Leaves'
 // @author       agoramachina (forked from DetectiveR's House of Chrome extension)
 // @match        *://*/*

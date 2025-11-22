@@ -2,7 +2,9 @@
    "author": "agoramachina (forked from DetectiveR's House of Chrome extension)",
    "browser_specific_settings": {
       "gecko": {
-         "data_collection_permissions": [],
+         "data_collection_permissions": {
+            "required": ["none"]
+         },
          "id": "house-of-web@agoramachina",
          "strict_min_version": "109.0"
       }
@@ -24,5 +26,5 @@
       "page": "options.html"
    },
    "permissions": [ "storage" ],
-   "version": "2.0.3"
+   "version": "2.0.4"
 }
