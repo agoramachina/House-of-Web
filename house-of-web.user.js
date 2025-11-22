@@ -130,16 +130,32 @@
         regex.lastIndex = 0;
         if (!regex.test(node.nodeValue)) return;
 
-        const spanWrapper = document.createElement('span');
+        // Build replacement nodes safely without innerHTML
+        const fragment = document.createDocumentFragment();
+        const text = node.nodeValue;
+        let lastIndex = 0;
+        let match;
         regex.lastIndex = 0;
-        spanWrapper.innerHTML = node.nodeValue.replace(regex, match =>
-          `<span class="${className}" style="${style}" data-highlighted="true">${match}</span>`
-        );
-
-        while (spanWrapper.firstChild) {
-          node.parentNode.insertBefore(spanWrapper.firstChild, node);
+        while ((match = regex.exec(text)) !== null) {
+          // Add text before match
+          if (match.index > lastIndex) {
+            fragment.appendChild(document.createTextNode(text.slice(lastIndex, match.index)));
+          }
+          // Add highlighted span
+          const span = document.createElement('span');
+          span.className = className;
+          span.style.cssText = style;
+          span.setAttribute('data-highlighted', 'true');
+          span.textContent = match[0];
+          fragment.appendChild(span);
+          lastIndex = regex.lastIndex;
         }
-        node.parentNode.removeChild(node);
+        // Add remaining text
+        if (lastIndex < text.length) {
+          fragment.appendChild(document.createTextNode(text.slice(lastIndex)));
+        }
+
+        node.parentNode.replaceChild(fragment, node);
       } else if (!isInsideHighlight(node)) {
         for (let i = node.childNodes.length - 1; i >= 0; i--) {
           walk(node.childNodes[i]);
